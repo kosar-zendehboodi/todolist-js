@@ -1,0 +1,90 @@
+body {
+  background-color: #f4f6ff;
+
+  color: #10375c;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1290px;
+}
+
+/* input task */
+.input {
+  min-width: 300px;
+  padding: 6px 10px;
+  outline: none;
+  border: 1px solid #b9b7b757;
+  border-radius: 4px;
+  margin: 5px;
+  background: #fffdfddd;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.main > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f3c623;
+  padding: 2rem;
+}
+
+#btnAdd {
+  background-color: #10375c;
+  color: white;
+  padding: 6px 10px;
+  margin: 5px;
+  border: 0;
+  border-radius: 4px;
+  transition: 1s all ease-in;
+  transform: translate(1);
+}
+#btnAdd:hover {
+  cursor: pointer;
+  background-color: rgb(145, 63, 223);
+  color: azure;
+}
+/* tasks part */
+ul {
+  
+  list-style: none;
+  margin-right: 2rem;
+}
+li {
+  min-width: 350px;
+  border: 1px solid #10375c51;
+  padding: 5px 10px;
+  margin: 6px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+li div * {
+
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.tasks li .checked {
+    color: darkgray;
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width: 805px) {
+  .main {
+    flex-direction: column;
+  }
+  .main div {
+    padding: 6px;
+    margin: 1 1 1rem 0;
+  }
+}
