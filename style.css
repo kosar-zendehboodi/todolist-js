@@ -78,6 +78,31 @@ li div * {
     color: darkgray;
     text-decoration: line-through;
 }
+li div:first-child{
+  display:flex ;
+  flex-direction: column;
+  
+}
+.inputedit{
+  outline: none;
+  background-color: #97a6b422;
+  border: none;
+  padding: 6px 10px;
+  max-width: auto;
+  transform: translate(1);
+  transition: 1S ALL ease-in;
+}
+
+.block{
+  display: none;
+}
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 805px) {
   .main {
