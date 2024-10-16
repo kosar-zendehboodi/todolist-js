@@ -54,6 +54,7 @@ function toDoList(task) {
   });
   checkBox.addEventListener("click", () => {
     checkBox.classList.toggle("checked");
+    liEl.classList.add("checked");
     updateLocalStorage();
   });
 
@@ -65,6 +66,7 @@ function toDoList(task) {
     liEditInput.setAttribute("value", `${titleElementdata}`);
     Edit.innerHTML = `✔️`;
     liEditInput.classList.add("inputedit");
+
     liEditInput.addEventListener("change", (e) => {
       Edit.innerHTML = `🖋️`;
       console.log(e.target.value);

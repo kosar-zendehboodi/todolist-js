@@ -99,8 +99,11 @@ li div:first-child{
 
 
 
-
-
+ /* li.checked {
+  color: darkgray;
+  text-decoration: line-through;
+}
+ */
 
 
 
