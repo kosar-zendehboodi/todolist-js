@@ -71,7 +71,7 @@ function toDoList(task) {
       newedit = e.target.value;
       liEditInput.setAttribute("value", `${liEditInput}`);
       title.innerHTML = newedit;
-      
+      updateLocalStorage();
     });
     updateLocalStorage();
   });
